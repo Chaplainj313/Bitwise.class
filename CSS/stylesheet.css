@@ -1,3 +1,20 @@
-body {
-    color: red;
+.parent {
+    background-color: yellow;
+    padding: 10px 12px;
 }
+
+.child {
+    background-color: green;
+    float: left;
+}
+
+.parent::after { /*adds element on the fly*/
+    content: '';
+    clear: both;
+    display: block; /* needed to be a block and not inline */
+}
+
+footer {
+    background-color: hotpink;
+}
+
